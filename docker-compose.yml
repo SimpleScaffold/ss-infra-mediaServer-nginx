@@ -1,0 +1,11 @@
+services:
+    nginx:
+        container_name: ${APPNAME}_nginx
+        image: nginx:latest
+        volumes:
+        - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+        - ./log:/log
+        - ./media:/media  # Nginx 설정 파일
+        ports:
+        - "${PORT}:80"  # Nginx가 제공하는 포트
+        restart: always
