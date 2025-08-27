@@ -1,35 +1,35 @@
 # Media Server
 
+[한국어](./readme.ko.md)
 
 ## Features
 
-- 정적 미디어 파일을 서빙해 줍니다
-- 동영상의 경우 스트리밍 제공
+- Serves static media files.
+- Provides video streaming.
 
 
 ## Installation
 
-1. 레파지토리 클론받기기:
+1. Clone the repository.
 
-2. .env 파일을 수정 (원하는 포트, 프로젝트명 입력력)
+2. Modify the .env file (enter the desired port and project name).
     ```
     APPNAME=appname
     PORT=8899
     ```
-3. 빌드 스크립트를 실행:
+3. Run the build script:
     ```bash
     ./build.sh
     ```
-    혹은
+    or
     ```bash
     sh build.sh
     ```
 
-4. 브라우저를 열고 `http://localhost:8899/media/`에 접속. 뒤에는 경로에 맞게 파일명을 입력.
-    
+4. Open your browser and go to `http://localhost:8899/media/`. Enter the file name according to the path.
 
 
 
-논의 사항
-- 기본 1주일인거 일단 3시간으로 쿠기에 저장해서 관리 <<기간, 정리법 논의 필요>>
-- 로그 파일 관리(용량에 대해서 주기적으로 초기화 할지, 쭉 싸을지)
+## Discussion Points
+- The default is 1 week, but it is managed by storing it in a cookie for 3 hours for now. <<Period, organization method needs discussion>>
+- Log file management (whether to initialize periodically based on capacity or keep accumulating).
