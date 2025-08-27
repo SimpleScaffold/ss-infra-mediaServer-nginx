@@ -10,12 +10,10 @@
 ## Installation
 
 1. 레파지토리 클론받기기:
-    ```bash
-    git clone https://github.com/your-username/media-server.git
-    ```
+
 2. .env 파일을 수정 (원하는 포트, 프로젝트명 입력력)
     ```
-    APPNAME=limelab_backend
+    APPNAME=appname
     PORT=8899
     ```
 3. 빌드 스크립트를 실행:
